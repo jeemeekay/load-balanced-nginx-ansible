@@ -37,6 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             ansible.become = true
             ansible.limit = "all"
             ansible.groups = groups
+            ansible.extra_vars = {redis_db_server: "10.0.15.12"}
           end
         end
 

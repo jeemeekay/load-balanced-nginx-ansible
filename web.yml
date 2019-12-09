@@ -4,3 +4,5 @@
   roles:
     - common
     - web
+  environment:
+    redis_db_server: '{{ redis_db_server }}'

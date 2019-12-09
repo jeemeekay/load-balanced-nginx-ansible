@@ -1,5 +1,9 @@
 ---
 
+- name: show Redis DB
+  debug:
+    msg: "Redis DB {{ redis_db_server }}"
+
 - name: install python3-flask
   apt: name=python3-flask state=present
 
