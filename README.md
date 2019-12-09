@@ -28,7 +28,10 @@ To test that loadbalancing works run the python script as below: In this example
         b'Hello World in Redis DB served by web2': 2
 
 
-       
+## Future work/improvements:       
+
+The python web framework right is executed as the binary 'python3 /opt/hello.py &'. One thing that can be done is to convert this to a proper daemon process running using init/systemd scripts. This means the state of the app can be monitored as well. 
+Also the ansible playbook for the webserver can run checks before starting the flask app to make sure the app is available before restarting it. This is useful when running 'vagrant provision' again. 
 
 
 
