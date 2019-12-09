@@ -1,0 +1,18 @@
+# {{ ansible_managed }}
+
+server {
+
+	listen 80;
+	server_name web1;
+	#root /usr/share/nginx/html;
+	#index index.html index.htm;
+
+	location / {
+		#try_files $uri $uri/ =404;
+		 proxy_pass      http://localhost:3001/;
+	}
+
+	error_page 404 /404.html;
+	
+
+}
