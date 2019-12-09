@@ -20,7 +20,15 @@ The solution was built on a mac laptop (as the vagrant host) with the following 
         
 
 ## Testing:
+To test that loadbalancing works run the python script as below: In this example 4 requests are sent.  
 
+        python3 test.py --url http://localhost:8011 --requests 4
+        Making sure loadbalancing is working. Should get an even number of hits on each node
+        b'Hello World in Redis DB served by web1': 2
+        b'Hello World in Redis DB served by web2': 2
+
+
+       
 
 
 
