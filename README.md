@@ -16,7 +16,7 @@ The solution was built on a mac laptop (as the vagrant host) with the following 
 
 ## Installation:  
 
-        tar -zcvf AutomationLogic-Devops.tar.gz
+        tar -zxvf AutomationLogic-Devops.tar.gz
         cd AutomationLogic-Devops
         vagrant up
         
